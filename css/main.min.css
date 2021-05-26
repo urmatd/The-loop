@@ -162,3 +162,63 @@ body {
   font-size: 12px;
   line-height: 12px;
 }
+
+.slider {
+  background-color: #f9f6f1;
+}
+
+.slider__inner {
+  padding-top: 170px;
+}
+
+.slider__item-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__text {
+  width: 50%;
+}
+
+.slider__img {
+  width: 50%;
+}
+
+.slider__price {
+  position: absolute;
+  max-width: 255px;
+  right: 0;
+}
+
+.slider__old-price, .slider__new-price {
+  display: block;
+}
+
+.slider .slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  border: none;
+  width: 40px;
+  height: 7px;
+  margin-right: 15px;
+  background-color: #d7b399;
+  cursor: pointer;
+}
+
+.slider .slick-active button {
+  background-color: #cecece;
+}
