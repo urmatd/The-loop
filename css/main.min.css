@@ -1,13 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   border: 0;
 }
 
@@ -47,20 +47,20 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__nav {
   max-width: 445px;
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .header__menu-item:hover .header__submenu {
@@ -143,8 +143,8 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card a {
@@ -193,7 +193,7 @@ body {
   right: 0;
 }
 
-.slider__old-price, .slider__new-price {
+.slider__old-price .slider__new-price {
   display: block;
 }
 
@@ -205,8 +205,8 @@ body {
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .slider .slick-dots button {
@@ -221,6 +221,17 @@ body {
 
 .slider .slick-active button {
   background-color: #cecece;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px 30px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #d7b399;
 }
 
 .info {
@@ -265,7 +276,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .catalog__top-column {
@@ -314,8 +325,8 @@ body {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
   background-color: #f9f6f1;
 }
 
@@ -327,8 +338,8 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .catalog__item-title {
@@ -384,4 +395,99 @@ body {
   top: 21px;
   background-image: url(../../images/arrow.svg);
   background-position: center;
+}
+
+.models {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.models__item {
+  position: relative;
+  padding: 25px;
+  border: 3px solid #d7b399;
+}
+
+.models__item::before {
+  content: "";
+  left: 25px;
+  right: 25px;
+  top: -3px;
+  bottom: -3px;
+  position: absolute;
+  background-color: transparent;
+  border: 3px solid #fff;
+}
+
+.models__item::after {
+  content: "";
+  left: -3px;
+  right: -3px;
+  top: 25px;
+  bottom: 25px;
+  position: absolute;
+  border: 3px solid #fff;
+}
+
+.models h3 {
+  padding: 0 2em;
+}
+
+.models h3 a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.subscribe__inner {
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 595px 455px;
+  grid-template-columns: 595px 455px;
+  grid-gap: 65px;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.subscribe__title {
+  text-align: left;
+  margin: 0;
+}
+
+.subscribe__email {
+  width: 255px;
+  height: 40px;
+  margin-right: 35px;
+  padding: 13px 20px;
+  background-color: #fff;
+  border: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #8d8d8d;
+  text-align: left;
+}
+
+.subscribe__btn {
+  padding: 11px 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
 }
